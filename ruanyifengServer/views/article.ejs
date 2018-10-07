@@ -1,0 +1,167 @@
+<!-- 文章详情页 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文章详情页</title>
+    <link rel="stylesheet" href="<%=webstatic %>css/reset.css">
+    <!-- 引入prism代码美化样式 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/prism/9000.0.1/themes/prism.css">
+    <!-- 文章公共内容样式 -->
+    <link rel="stylesheet" href="<%=webstatic %>css/page.css">
+    <link rel="stylesheet" href="<%=webstatic %>css/article.css">
+</head>
+<body>
+    <div class="body">
+        <div class="header clearfix">
+            <h1 class="fl">阮一峰的网络日志<span> » <a href="<%=host%>">首页</a> » <a href="#">档案</a></span></h1>
+            <div class="seach fr clearfix">
+                <div class="icon fl">
+                    <a href="#">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAUzSURBVHjavFdbbFRVFF3nPjoz7dTWTittaW0jUDRAUqaNojyqREnEQKgfUj9MqqAmhqRt/OCD4CuY+Kckoh+aiGKC+gMJbdHoRysJ8dkhhmJLNdDKtJU+6GMK87j3Hs85d2Z6HzNtMYWb3Dn3NWftvfba+5xNYDl+e6Fkj6yqb/oDRbWq14vlPBLRKCITkxf0ROLt+hNjp1PPSRK4kA3vF1dXNRcWlyA2OQU9eos9opAkAiKxD+XkKO6t15aRWO7J/MgmAZU8MEgexgZHMX518Dh72sYMmVKShnxWuWHdHtxKIDIYTgMuDzgfmSOIQkYMpdUF8OY92Hytt4/jvkg47czzU16iQovM3QFwmNck+Yyduu7D6NA0Z6JR4THntFs9V4tWQg6Ui3s6MwKDncsFTnXKLJhDSeUK3AgPtyhccDzmVs999buRt/1Vm4i0od+hX7+MRG87jPGB/w1u8FPj9xEw7McVrnYuOCvtpjTth3J/nTg99c8LRhKhr6D3dTB5R24bXFwbMXBsyZzeoXaycEpJ95TB09AGX/NpqLVNtw8urnVzLvHjFNxiFqRy2OOHuqUVnue+ACkoWzo4O6lGzTmuHq6nPvY2m9rVqjrIK2rMEKxqyG5NPAKt+wjo0LklgfNxJkZMA3KJvqRUk3z5UFY3QH14P0h+WUY79HPvgv7VuSg4ZRGY1YgZgqXmORccF17sy2ehnf9AeO085K2HQFbtXBScj0LcpgF2cN+WV+DZ/LJQu6gD4R7oV7pBJwbSgtMvfiPoVp56DySwxm7EtkMs1WdAB7qzggsDJKQYsHucSkOudrkiCPWR/fA2nYCn8SNIK4NptSMyAu3sAdDRkIsJdfth0LzSrODUoPNZ4KI9SxJI5UHk7D4GdQfz2us31c7CoHMjRkKuDPHseCMrONVhNcDJwMJpKFVvg9L4OaTiNWm1x789KCqkrXhVBiEz0WYCT2nAzQAD1/vaETv1GrRfP4Vx5cfMNcDPwvP0h0DhanPym7OIf/+O67vcJ1/PCJ4KgdzaUP6Wz+dU+5yIL6fV+PsHGAOdwlPpvvUOyeeAVGyCdqkDNB6DPjsBSrnndfOGevOh3RhGItxvA+fX1CtbGFhgYUFkFMZPR6F1HnClHq8HyubWtJexX06CRmdt33hrd7nA7SFY4qoGpnYuOKcRykPPgDCBcsHx9Iv+fNL2PueBehCWUfYQIIMGLOCcOmXDXsh1+yCt35tUPfvzGFuSvzvoinXOxqa02qOhM6733nVP2MAdaej2XN11DPKjLZCD+yBvahGCo7JfTKAN9UD7s8Oe9zUNIhz8fWI8DG2k38WCFdxugANcXrvTVd1IEbuv3Jour7Hzn7jLMBNfKs7R3i67gRVrbeCOEDhinmWhAatsqdquM2XzHZINhK2cqTjHr/XZdVJUbgN3MWAVXKbSyg9jesRW2xP9di+lwrL5ojM3m2H/kG9hwcIA37c71W6wJdW2J2S5nrjYbq/t1AHAhJsKQeyfPvf6IMJgghPJhFZ4x0KlfLFvt22du45Au/A1SOlGc0P672XXwhLtOcM0kTTEMMd0qkVmMNXxMd/tsedUjInr4SQDgOfeXMSiN0FCL5WHah4L1qqYXPJOJlttd+a5M+YpcG5poLYKQ5f+6JJ4r8bbJYP47hq4r7QAs9PjYNhHJd4o8l5taiwuOpa7AS4XKqI/5NjJbTnaWK92nLdLuhQAJayRNMiygXPBeQN+Qbvu0zDc3y+aUzhbkGR73sI7ljvUnndx2q3t+X8CDAD66FtrIL864AAAAABJRU5ErkJggg==" alt="">
+                    </a>
+                </div>
+                <input class="fr" type="text" name="" id="">
+                <div class="seach-btn"></div>
+            </div>
+        </div>
+        <div class="content clearfix">
+            <div class="content-b">
+                <h2 class="content-b-title clearfix">
+                    分类：<a><%=category.cname%></a>
+                    <div class="next-pre">
+                        <% if(nextPre.pre){%><p>上一篇：<a href="<%=host+'blog/article/'+nextPre.pre.id%>"><%=nextPre.pre.title%></a></p><%}%>
+                        <% if(nextPre.next){%><p>下一篇：<a href="<%=host+'blog/article/'+nextPre.next.id%>"><%=nextPre.next.title%></a></p><%}%>
+                    </div>
+                    <div class="next-pre-mobile">
+                            <% if(nextPre.pre){%><a href="<%=host+'blog/article/'+nextPre.pre.id%>">⇐&nbsp;</a><%}%>
+                            <% if(nextPre.next){%><a href="<%=host+'blog/article/'+nextPre.next.id%>">&nbsp;⇒</a><%}%>
+                    </div>
+                </h2>
+            </div>
+            <div class="page" id="page">
+                    <h1><%=article.title%></h1>
+                    <div class="page-mate">
+                        <div class="page-mate-message">
+                            <p>作者：<span><%=article.aid%></span></p>
+                            <p>日期：<span><%=timeChange(article.create_time,1)%></span></p>
+                        </div>
+                        <span class="page-mate-share">分享</span>
+                    </div>
+                    <div class="page-sponsor"></div>
+                    <div class="page-content">
+                        <%-article.content%>
+                    </div>    
+            </div>
+            <div class="doc-message">
+                <h3>文档信息</h3>
+                <ul>
+                    <li>版权声明：<span>自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</span></li>
+                    <li>发表日期： <span class="date"><%=timeChange(article.create_time,1)%></span></li>
+                    <li>更多内容：</li>
+                    <li>文集：</li>
+                    <li>社交：</li>
+                </ul>
+            </div>
+
+            <div class="relevant-page">
+                <h2>相关文章</h2>
+                <ul>
+                    <% relevant.forEach(function(item1){%>
+                                <li><strong><%=timeChange(item1.create_time,3) %>：<a href="<%=host+'blog/article/'+item1.id%>"><%=item1.title %></a></strong>
+                                    <div class="page-header">
+                                        <%=item1.subtitle %>
+                                    </div>
+                                </li>
+                    <%})%>
+                </ul>
+
+            </div>
+            <div class="message">
+                <h2>留言（<span><%=comment.length%></span>条）</h2>
+                <div class="message-box">
+                        <% comment.forEach(function(itme){%>
+
+                        <div class="comment page-content">
+                                <p>
+                                    <% if(itme.u_web){%>
+                                        <a href="<%=itme.u_web%>"><strong><%=itme.uname%></strong></a>
+                                    <%}else{%>
+                                        <span><%=itme.uname%></span> 
+                                    <%}%>说：
+                                </p>
+
+                                <div class="comment-content">
+                                    <p><%=itme.content %></p>
+                                </div>
+                                <p class="comment-inner">
+                                        <span class="date"><%=timeChange(itme.create_time,2) %></span> | <a>#</a> | <a>引用</a>
+                                </p>
+                        </div>     
+                        <%})%>     
+                </div>
+            </div>
+            <div class="my-comments">
+                <h2>我要发表看法</h2>
+                    <div>
+                        <p><label for="comment">您的看法（HTML标签部分可用）</label></p>
+                        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <p><label for="name">您的大名：</label></p>
+                        <input type="text" id="uname" name="uname">
+                        <span>«-必填</span>
+                    </div>
+                    <div>
+                            <p><label for="personweb">个人网站：</label></p>
+                            <input type="text" id="u_web" name="u_web">
+                            <span>«-必填</span>
+                    </div>
+                    <div>
+                            <p><label for="suremessage">记住个人信息?</label><input type="checkbox" id="suremessage"></p>
+                    </div>
+                    <div>
+                        <button class="submit" id="submit">发表</button>
+                        <span>«-点击按钮</span>
+                    </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>2018 @ <a>我的邮件</a>|<a>博客</a>|<a>推特</a>|<a>GitHub</a></p>
+        </div>
+    </div>
+    <script src="<%=webstatic%>js/prism.js"></script>
+    <script>
+         var btn = document.querySelector("#submit");
+         btn.onclick = function(){
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST","<%=imgstatic%>comment/add");
+            var obj = {
+                content:document.querySelector("#content").value?document.querySelector("#content").value:'',
+                u_web:document.querySelector("#u_web").value?document.querySelector("#u_web").value:'',
+                uname:document.querySelector("#uname").value?document.querySelector("#uname").value:'',
+                aid:parseInt(location.href.split('/').pop()),
+                create_time:Date.now()
+            }
+            var formData = new FormData();
+            for(var key in obj){
+                formData.append(key,obj[key]);
+            }
+            xhr.send(formData);
+            xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status >= 200 && xhr.status < 300 || xhr.status == 304) {
+                    var json = JSON.parse(xhr.responseText);
+                    if(json.errCode == 10017){
+                        alert('发表成功');
+                        location.reload();
+                    }
+                } 
+            }
+            }
+         }
+    </script>
+</body>
+</html>

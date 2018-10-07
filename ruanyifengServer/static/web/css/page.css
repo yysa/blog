@@ -1,0 +1,254 @@
+/* 文章公共样式 */
+
+.page h1,h2,h3{
+    margin: 0.4em 0 0.2em 0;
+    padding: 0 0 0.2em 0;
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    border-bottom: 1px solid #d3d3d3;
+}
+/* 文章标题样式 */
+.page h1{
+    line-height: 250%;
+    font-family: 'Trebuchet MS', Arial, 'Lucida Grande', Verdana, Lucida, Helvetica, sans-serif;
+}
+
+/* 文章无边框图片 */
+.page .page-img{
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    vertical-align: middle;
+}
+/* 文章无边框图片，垂直居中*/
+.page .page-img:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+/* 文章作者日期样式 */
+.page-mate{
+    margin: 1.5em auto 2em;
+    line-height: 0.8;
+    color: #556677;
+    padding: 0 1em;
+}
+.page-mate:after{
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    clear:both;
+}
+.page-mate-message{
+    float: left;
+}
+.page-mate-share{
+    float: right;
+    background: darkorange;
+    color:#fff;
+    padding: 0.5em 1em;
+    border-radius: 2px;
+    font-weight: 900;
+}
+/* 文章广告图样式 */
+.page-sponsor{
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    background-color: #f5f2f0;
+    height: 100px;
+}
+/* 文章内容样式 */
+.page-content{
+
+}
+/* 文章副标题样式 */
+.page-content h2{
+    margin-top: 1.5em!important;
+    font-size: 2.88em!important;
+    line-height: 1.35em!important;
+    font-weight: normal!important;
+    font-family: Georgia, serif!important;
+}
+
+.page-content h3{
+    margin-top: 1.5em!important;
+    font-size: 1.87em!important;
+    line-height: 1.35em!important;
+    font-weight: normal!important;
+    font-family: Georgia, serif!important;
+}
+/* 文章段落样式 */
+.page-content p{
+    font-size: 1.6em;
+    margin-top: 1em;
+    line-height: 180%;
+    margin-left: 0.8em;
+}
+
+/* 文章链接样式 */
+.page-content a{
+    color: #223472;
+    text-decoration: underline;
+}
+.page-content a:hover{
+    color:firebrick;
+}
+/* 文章配图样式 */
+.page-content img{
+    border: 0.3em solid #e0dfcc;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+}
+
+
+/* 文字强调样式 */
+.page-content strong{
+    font-weight: 800;
+}
+/* 包裹盒子 blockquote 样式 */
+.page-content blockquote{
+    background-color: #f5f2f0;
+    padding: 1em;
+    margin: 2em 2em;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    border-width: 0.3em;
+    border-color: #e0dfcc;
+    border-style: solid;
+    text-shadow: 0 1px white;
+    overflow: auto;
+}
+/* 段落中code样式 */
+.page-content p code{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 120%;
+    background-color: pink;
+    border-radius: 5px;
+    margin: auto 3px;
+    color:#000;
+}
+/* 段落中的链接中的code样式 */
+.page-content a>code{
+    text-decoration: underline;
+    transition: all 1s;
+}
+/* 段落中的链接中的code 被hover的样式 */
+.page-content a>code:hover{
+    background-color: red;
+    color:#fff;
+}
+/* 改变prism代码字体大小 */
+.page-content blockquote pre>code{
+    font-size: 1.35em;
+}
+/* 文章参考链接样式 */
+.page-content ul>li,.page ul>li{
+    list-style-type: square;
+    font-size: 1.6em;
+    line-height: 220%;
+    margin-left: 4em;
+}
+/* 文章修改日期 */
+.page-change{
+    font-size: 1.6em;
+    color: #556677;
+    padding: 0.5em 1em;
+    margin: 0 0 1em 0;
+    border-bottom: none;
+    background-color: #AAD2F0;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-family: Georgia, serif;
+    margin-top: 2em;
+}
+
+.page-change ul>li{
+    text-shadow: 1px 1px 0px #eeeeee;
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+/* 动态表格样式 */
+.page-table{
+    border: 1px solid #2b2b2b;
+    font-family: verdana,arial,sans-serif;
+    font-size: 100%;
+    color:#333333;
+    border-width:1px;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+}
+.page-table td{
+    border: 1px solid #2b2b2b;
+    font-size: 1.4em;
+    border-width: 1px;
+    padding: 0.6em;
+    border-style: solid;
+    border-color: #666666;
+}
+
+@media (max-width: 770px){
+
+    .page-table td:before {
+        display: inline-box;
+        position: absolute;
+        top: 6px;
+        left: 0px;
+        width: 40%;
+        padding-right: 10px;
+        padding-left: 5px;
+        white-space: nowrap;
+        font-weight: blod;
+        content: attr(data-label);
+    }
+    .page-table td{
+        display: block;
+        padding-left: 45%;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+    }
+    .page-table thead{
+        display: none;
+    }
+    .page-table tr{
+        border: 1px solid #ccc;
+        margin-bottom: 2em;
+    }
+    .page-table tr{
+        display: block;
+    }
+    .page-table{
+        border:none;
+    }
+    .page-table tr:nth-child(2n) {
+        background-color: rgba(0,0,0,0.1);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .page-img{
+        max-width: 95%;
+    }
+    .page-table{
+        width: 100%;
+    }
+    .page-content h2{
+        font-size: 2em!important;
+    }
+}
+
+
+

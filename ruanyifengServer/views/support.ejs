@@ -1,0 +1,41 @@
+<!-- 广告页 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>广告页</title>
+    <link rel="stylesheet" href="<%=webstatic%>css/reset.css">
+    <link rel="stylesheet" href="<%=webstatic%>css/page.css">
+    <link rel="stylesheet" href="<%=webstatic%>css/support.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="header clearfix">
+            <h1 class="fl">阮一峰的网络日志
+                <span> » </span>
+            </h1>
+        </div>
+        <div class="page page-content">
+            <%-content[0].content%>
+            <div class="page-change">
+                <ul>
+                    <li>最后修改时间： <%=timeChange(content[0].change_time,4)%></li>
+                </ul>
+            </div>
+        </div>   
+        <div class="footer">
+            <p>2018 @
+                <a>我的邮件</a>|
+                <a>博客</a>|
+                <a>推特</a>|
+                <a>GitHub</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

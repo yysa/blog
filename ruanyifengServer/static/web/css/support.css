@@ -1,0 +1,94 @@
+/* 日志页面样式 */
+body,html{
+    width: 100%;
+}
+.body{
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.header{
+    border-bottom: 1px solid #d3d3d3;
+    margin: 1em 0;
+    height: 5em;
+}
+p{
+    margin-top: 1em;
+    line-height: 180%;
+    margin-left: 0.8em;
+}
+.header h1{
+    margin-top: 0.9em;
+    font-size: 1.8em;
+    /* float: left; */
+     color: orange;
+}
+.header h1 span{
+    color: #556677;
+}
+
+.footer{
+    width: 100%;
+    margin: 0 1em;
+    border-top: 1px solid #d3d3d3;
+    color: #d3d3d3;
+    padding-top: 0;
+    line-height: 1.2;
+}
+.footer p,.footer a{
+    color:gray;
+    text-align: right;
+    padding: 0 0.2em 0.1em 0.2em;
+}
+.footer p{
+    padding-top: 0.1em;
+}
+.footer a{
+    cursor: pointer;
+}
+
+/* 媒体查询 */
+@media (max-width: 770px){
+    .header {
+        margin: 0;
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+        margin: 0;
+    }
+    .body{
+        width: 95%;
+        padding: 0;
+    }
+   
+}
+/* @media (max-width: 48rem){
+    .header {
+        margin: 0;
+        height: 3.5em;
+        width: 100%;
+    }
+    .body{
+        width: 95%;
+    }
+    
+} */
+
+@media screen and (max-width: 500px){
+    /* .content-a{
+        min-width: 80%;
+    }
+    .content-b{
+        min-width: 80%;
+    } */
+    .seach{
+        display: none;
+    }
+    .header{
+        margin: 0;
+        height: 3.5em;
+        width: 100%;
+    }
+}

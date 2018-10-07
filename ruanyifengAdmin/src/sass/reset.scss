@@ -1,0 +1,68 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+table,
+ul,
+ol,
+dl,
+dt,
+dd,
+input,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #4d555d;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+input,
+select,
+button {
+  border: 0 none;
+  outline: none;
+}
+
+body {
+  background: #f8fafc !important;
+  font: 14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+}
+
+.cf::after {
+  clear: both;
+  display: block;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+

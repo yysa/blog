@@ -1,0 +1,128 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: url(../images/pic-bg01.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 1.5em;
+    color: #fefefe;
+    overflow: auto;
+    width: auto;
+    height: auto;
+    max-height: 80%;
+    min-width: 90%;
+    position: relative;
+}
+.content .content-inner{
+    padding: 1em;
+}
+.content .content-inner .header{
+    margin: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #d3d3d3;
+    margin: 1em;
+    height: 5em;
+}
+.content .content-inner .header h1{
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 90%;
+    color: #fefefe;
+    float: none;
+    margin: auto;
+    padding-top: 0.4rem;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 0 1px 1px #333;
+    cursor: pointer;
+}
+
+.content .content-inner .header h1:hover{
+    text-decoration: underline;
+}
+.content .content-inner p{
+    text-align: center;
+    color: #fefefe;
+}
+@media (max-width: 770px) and (min-width: 641px) {
+    .content{
+        min-width: 70%;
+    }
+}
+
+@media screen and (min-width: 771px){
+    .content{
+        min-width: 40%;
+    }
+}
+.center{
+    margin: 1.5em 1em 0 1em;
+    
+}
+.center .center-list{
+    padding-bottom: 2em;
+    border-bottom: 1px solid #d3d3d3;
+}
+.center a{
+    display: block;
+    color: #fefefe;
+    text-align: left!important;
+    margin-top: 1em;
+    margin-left: 0.8em;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0.25rem;
+    border-radius: 0.5em;
+    text-shadow: 0 1px 1px #333;
+    font-size:1.6em;
+    line-height:220%;
+}
+.center a:hover{
+    background: #fff;
+    color: #556677;
+}
+.center span{
+    cursor: pointer;
+}
+.center span:hover{
+    text-decoration: underline;
+}
+.footer{
+    margin: 0 1em 0 1em;
+}
+.footer p{
+    text-align: right!important;
+    padding: 0.3em 0.1em 0.1em 0.3em;
+}
+.footer p a{
+    cursor: pointer;
+    line-height: 100%;
+    color: #fefefe;
+    padding: 4px;
+    border-radius: 20%;
+}
+.footer p a:hover{
+    background: #fff;
+    color: #000;
+    text-decoration: underline;;
+}
+.up-arrow{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 21px;
+    height: 21px;
+    background: url(../images/icon-tree.png) no-repeat center center;
+    background-color: #fefefe;
+    border-radius: 100%;
+    cursor: n-resize;
+}
+
