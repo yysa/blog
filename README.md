@@ -7,9 +7,18 @@
 
 * 3.测试数据.sql是测试数据插入的sql语句。
 
+# 使用前的准备
+* 1.安装mysql(我用的是WampServer开启的mysql服务)
+
+* 2.安装node（v8.11.2）
+
+* 3.安装npm/cnpm（5.6.0）
+
+* 4.安装git（2.16.2.windows.1）
+
 # 使用说明
 
-<strong>1.先使用git克隆本项目。</strong>
+<strong>1.使用git克隆本项目</strong>
 
 > `git clone git@github.com:yysa/blog.git`
 
@@ -26,3 +35,5 @@
 > `npm run start`
 
 <strong>5.访问博客的首页localhost:8080和博客的后台管理localhost:8081(视自己电脑端口占用的情况而定，我的是8081端口)</strong>
+
+# 待续...
